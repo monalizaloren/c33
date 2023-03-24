@@ -84,17 +84,16 @@ function setup()
   button.size(50,50);
   button.mouseClicked(drop);
 
-   //botão 2
-   button2 = createImg('cut_btn.png');
-   button2.position(330,35);
-   button2.size(60,60);
-   button2.mouseClicked(drop2);
+   //Crie o button2 com:
+   //posição: 330 e 35
+   //Quando o botão for clicado irá acontecer a função 'drop2'
+   //???
  
-   //botão 3
-   button3 = createImg('cut_btn.png');
-   button3.position(360,200);
-   button3.size(60,60);
-   button3.mouseClicked(drop3);
+   //Crie o button3 com:
+   //posição: 360 e 200
+   //Quando o botão for clicado irá acontecer a função 'drop3'
+   //???
+   
 
   mute_btn = createImg('mute.png');
   mute_btn.position(450,20);
@@ -102,8 +101,11 @@ function setup()
   mute_btn.mouseClicked(mute);
   
   rope = new Rope(8,{x:40,y:30});
-  rope2 = new Rope(7,{x:370,y:40});
-  rope3 = new Rope(4,{x:400,y:225});
+  /*Crie um objeto da classe Rope.
+  Esse objeto irá se chamar: rope2 e rope3
+  a rope2 tem:x:370,y:40
+  rope3:x:400,y:225}  */
+  //???
 
   ground = new Ground(200,canH,600,20);
   blink.frameDelay = 20;
@@ -143,8 +145,8 @@ function draw()
   pop();
 
   rope.show();
-  rope2.show();
-  rope3.show();
+  /*Na linha acima, você está mostrando o objeto rope, faça o mesmo com rope2 e rope3 */
+  //??
 
   Engine.update(engine);
   ground.show();
